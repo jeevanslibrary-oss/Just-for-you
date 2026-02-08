@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Question 😄</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #222, #555);
+  font-family: Arial, sans-serif;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  width: 90%;
+  max-width: 350px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 15px 40px;
+  font-size: 18px;
+  border: none;
+  border-radius: 30px;
+  background: #28a745;
+  color: white;
+  cursor: pointer;
+}
+
+#result {
+  display: none;
+  margin-top: 25px;
+  font-size: 24px;
+  font-weight: bold;
+  color: red;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+  <h1>Abhi 🤔</h1>
+  <h2>Type YES if you are brave 😏</h2>
+
+  <button id="yes">YES</button>
+
+  <div id="result">MADDA GUDAVARA 😆</div>
+</div>
+
+<script>
+const yesBtn = document.getElementById("yes");
+const result = document.getElementById("result");
+
+yesBtn.addEventListener("click", () => {
+  result.style.display = "block";
+});
+</script>
+
+</body>
+</html>
