@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Abhi 😄</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #1f1f1f, #555);
+  font-family: Arial, sans-serif;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 18px;
+  text-align: center;
+  width: 90%;
+  max-width: 350px;
+}
+
+h1 {
+  margin-bottom: 15px;
+}
+
+button {
+  padding: 15px 45px;
+  font-size: 18px;
+  border: none;
+  border-radius: 30px;
+  background: #28a745;
+  color: white;
+  cursor: pointer;
+}
+
+#result {
+  display: none;
+  margin-top: 25px;
+  font-size: 26px;
+  font-weight: bold;
+  color: red;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+  <h1>Abhi 🤔</h1>
+  <h2>Click YES if you are brave 😏</h2>
+
+  <button id="yes">YES</button>
+
+  <div id="result">MADDA GUDAVARA 😆</div>
+</div>
+
+<script>
+document.getElementById("yes").addEventListener("click", function () {
+  document.getElementById("result").style.display = "block";
+});
+</script>
+
+</body>
+</html>
